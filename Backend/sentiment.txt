@@ -1,0 +1,18 @@
+Here's a sample text for sentiment analysis:
+
+"I am extremely disappointed with the customer service I received today. The representative was rude and unhelpful, and they were unable to resolve the issue I was having. I will be considering switching to a different company in the future."
+
+This text expresses negative sentiment.
+
+Here's why:
+
+Strong negative words: "disappointed," "rude," "unhelpful"
+Negative emotions: disappointment, frustration
+Negative consequences: considering switching companies
+This text provides a good example for sentiment analysis models to identify and classify as negative.
+
+You can further enhance this by adding more nuanced language, such as:
+
+"I was initially excited to try this product, but I was left feeling very let down." (Expresses initial positive sentiment followed by disappointment)
+"The food was okay, but the service was incredibly slow." (Mixed sentiment with a focus on negative service)
+These variations will help test the model's ability to detect subtle nuances in sentiment.
