@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../models/card_info.dart';
+import '../models/card_model.dart';
 
 class HeroLayoutCard extends StatelessWidget {
-  final CardInfo cardInfo;
+  final CardModel cardInfo;
   const HeroLayoutCard({
     super.key,
     required this.cardInfo,
@@ -18,11 +18,7 @@ class HeroLayoutCard extends StatelessWidget {
             child: OverflowBox(
               maxWidth: width * 7 / 8,
               minWidth: width * 7 / 8,
-              child: Image(
-                fit: BoxFit.cover,
-                image: NetworkImage(
-                    'https://flutter.github.io/assets-for-api-docs/assets/material/${cardInfo.url}'),
-              ),
+              child: cardInfo.page,
             ),
           ),
           Padding(

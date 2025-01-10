@@ -1,4 +1,4 @@
-import 'package:ai_file/models/card_info.dart';
+import 'package:ai_file/models/card_model.dart';
 import 'package:flutter/material.dart';
 import '../constants/constants.dart';
 import '../data/card_data.dart';
@@ -12,7 +12,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  final CarouselController controller = CarouselController(initialItem: 1);
+  final CarouselController controller = CarouselController(initialItem: 0);
   @override
   Widget build(BuildContext context) {
     final double height = MediaQuery.sizeOf(context).height;
@@ -26,7 +26,7 @@ class _MyHomePageState extends State<MyHomePage> {
           controller: controller,
           itemSnapping: true,
           flexWeights: const <int>[1, 7, 1],
-          children: CardData.cardList.map((CardInfo card) {
+          children: CardData.cardList.map((CardModel card) {
             return HeroLayoutCard(cardInfo: card);
           }).toList(),
         ),
