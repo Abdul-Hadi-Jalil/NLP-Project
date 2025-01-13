@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants/constants.dart';
+import 'utils/constants/constants.dart';
 import 'views/my_home_page.dart';
 
 void main() {

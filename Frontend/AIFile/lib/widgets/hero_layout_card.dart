@@ -14,12 +14,10 @@ class HeroLayoutCard extends StatelessWidget {
     return Stack(
         alignment: AlignmentDirectional.bottomStart,
         children: <Widget>[
-          ClipRect(
-            child: OverflowBox(
-              maxWidth: width * 7 / 8,
-              minWidth: width * 7 / 8,
-              child: cardInfo.page,
-            ),
+          OverflowBox(
+            maxWidth: width * 7 / 8,
+            minWidth: width * 7 / 8,
+            child: cardInfo.page,
           ),
           Padding(
             padding: const EdgeInsets.all(18.0),

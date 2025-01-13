@@ -1,4 +1,6 @@
 import '../models/card_model.dart';
+import '../views/download_file_page.dart';
+import '../views/perform_action_page.dart';
 import '../views/select_file_page.dart';
 
 class CardData {
@@ -11,12 +13,12 @@ class CardData {
     CardModel(
       title: 'Select The option',
       subtitle: 'Select the action you want to perform on the file',
-      page: SelectFilePage(),
+      page: PerformActionPage(),
     ),
     CardModel(
       title: 'Download File',
       subtitle: 'Download the file after the action is performed',
-      page: SelectFilePage(),
+      page: DownloadFilePage(),
     ),
   ];
 }
