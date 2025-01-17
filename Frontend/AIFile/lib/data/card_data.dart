@@ -1,36 +1,24 @@
-import '../models/card_info.dart';
+import '../models/card_model.dart';
+import '../views/download_file_page.dart';
+import '../views/perform_action_page.dart';
+import '../views/select_file_page.dart';
 
 class CardData {
-  static const List<CardInfo> cardList = <CardInfo>[
-    CardInfo(
-      title: 'The Flow',
-      subtitle: 'Sponsored | Season 1 Now Streaming',
-      url: 'content_based_color_scheme_1.png',
+  static const List<CardModel> cardList = <CardModel>[
+    CardModel(
+      title: 'Select File',
+      subtitle: 'Upload the file you want to perform action on',
+      page: SelectFilePage(),
     ),
-    CardInfo(
-      title: 'Through the Pane',
-      subtitle: 'Sponsored | Season 1 Now Streaming',
-      url: 'content_based_color_scheme_2.png',
+    CardModel(
+      title: 'Select The option',
+      subtitle: 'Select the action you want to perform on the file',
+      page: PerformActionPage(),
     ),
-    CardInfo(
-      title: 'Iridescence',
-      subtitle: 'Sponsored | Season 1 Now Streaming',
-      url: 'content_based_color_scheme_3.png',
-    ),
-    CardInfo(
-      title: 'Sea Change',
-      subtitle: 'Sponsored | Season 1 Now Streaming',
-      url: 'content_based_color_scheme_4.png',
-    ),
-    CardInfo(
-      title: 'Blue Symphony',
-      subtitle: 'Sponsored | Season 1 Now Streaming',
-      url: 'content_based_color_scheme_5.png',
-    ),
-    CardInfo(
-      title: 'When It Rains',
-      subtitle: 'Sponsored | Season 1 Now Streaming',
-      url: 'content_based_color_scheme_6.png',
+    CardModel(
+      title: 'Download File',
+      subtitle: 'Download the file after the action is performed',
+      page: DownloadFilePage(),
     ),
   ];
 }
